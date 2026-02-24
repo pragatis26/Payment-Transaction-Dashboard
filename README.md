@@ -1,92 +1,95 @@
 💳 Payment Transaction Analytics Dashboard
 
-A full-stack financial analytics dashboard that monitors payment transactions, visualizes key metrics, and detects high-risk activity.
-The system simulates real-world transaction monitoring workflows used in banks like Barclays for operational insights and risk analysis.
+A full-stack **financial analytics dashboard** that monitors payment transactions, visualizes key metrics, and detects high-risk activity.
+The system simulates real-world **transaction monitoring workflows used in banks like Barclays** for operational insights and risk analysis.
 
-This project demonstrates data analysis, dashboard design, API development, and business analytics thinking.
+This project demonstrates **data analysis, dashboard design, API development, and business analytics thinking**.
 
-🚀 Features
-📊 Analytics Dashboard
+---
 
-Total Transactions KPI
+# 🚀 Features
 
-Total Transaction Amount
+### 📊 Analytics Dashboard
 
-Successful vs Failed Payments
+* Total Transactions KPI
+* Total Transaction Amount
+* Successful vs Failed Payments
+* Transaction Success Rate
 
-Transaction Success Rate
+### 📈 Data Visualization
 
-📈 Data Visualization
+* Pie chart showing **payment channel distribution**
+* Visual insights into **UPI, Card, NEFT, and IMPS usage**
 
-Pie chart showing payment channel distribution
+### 🔍 Transaction Monitoring
 
-Visual insights into UPI, Card, NEFT, and IMPS usage
+* Dynamic transaction table
+* Real-time data loading from backend APIs
 
-🔍 Transaction Monitoring
+### 🎯 Filtering & Investigation
 
-Dynamic transaction table
+* Filter transactions by **payment type**
+* Search transactions by **User ID**
 
-Real-time data loading from backend APIs
+### 🚨 Risk Detection
 
-🎯 Filtering & Investigation
+* Automatically identifies **high-value transactions (> ₹4000)**
+* Highlights potential **risk transactions**
 
-Filter transactions by payment type
+### ⚙ Backend API
 
-Search transactions by User ID
+* REST APIs built using **Node.js and Express**
+* Provides transaction data and analytics endpoints
 
-🚨 Risk Detection
+---
 
-Automatically identifies high-value transactions (> ₹4000)
+# 🏗 System Architecture
 
-Highlights potential risk transactions
+```mermaid
+flowchart LR
+A[Python Data Generator] --> B[Transaction Dataset]
+B --> C[Node.js Express API]
+C --> D[Analytics Dashboard]
+D --> E[Charts + Transaction Monitoring]
+```
 
-⚙ Backend API
+**Flow:**
 
-REST APIs built using Node.js and Express
+1. Python generates synthetic payment transaction data
+2. Data is stored as a JSON dataset
+3. Node.js backend serves analytics APIs
+4. Frontend dashboard visualizes insights using charts and tables
 
-Provides transaction data and analytics endpoints
+---
 
-🏗 System Architecture
+# 🛠 Tech Stack
 
-Flow:
+**Backend**
 
-Python generates synthetic payment transaction data
+* Node.js
+* Express.js
 
-Data is stored as a JSON dataset
+**Frontend**
 
-Node.js backend serves analytics APIs
+* HTML
+* CSS
+* JavaScript
+* Chart.js
 
-Frontend dashboard visualizes insights using charts and tables
+**Data Generation**
 
-🛠 Tech Stack
+* Python
 
-Backend
+**Version Control**
 
-Node.js
+* Git
+* GitHub
 
-Express.js
+---
 
-Frontend
+# 📂 Project Structure
 
-HTML
-
-CSS
-
-JavaScript
-
-Chart.js
-
-Data Generation
-
-Python
-
-Version Control
-
-Git
-
-GitHub
-
-📂 Project Structure
+```
 payment-transaction-dashboard
 │
 ├── analysis
@@ -104,68 +107,85 @@ payment-transaction-dashboard
 │
 ├── package.json
 └── README.md
-▶ Running the Project
-1️⃣ Install dependencies
+```
+
+---
+
+# ▶ Running the Project
+
+### 1️⃣ Install dependencies
+
+```bash
 npm install
-2️⃣ Generate transaction data
+```
+
+### 2️⃣ Generate transaction data
+
+```bash
 python analysis/analyze.py
-3️⃣ Start the backend server
+```
+
+### 3️⃣ Start the backend server
+
+```bash
 node backend/server.js
-4️⃣ Open dashboard
+```
+
+### 4️⃣ Open dashboard
+
+```
 http://localhost:3000
-📊 Example Dashboard Insights
+```
+
+---
+
+# 📊 Example Dashboard Insights
 
 The dashboard provides key operational insights such as:
 
-Payment channel distribution
+* Payment channel distribution
+* Transaction success rates
+* High-value transaction monitoring
+* User-level payment investigation
 
-Transaction success rates
+These insights help simulate **real business analytics scenarios in financial systems**.
 
-High-value transaction monitoring
+---
 
-User-level payment investigation
+# 🎯 Business Analyst Skills Demonstrated
 
-These insights help simulate real business analytics scenarios in financial systems.
+This project highlights key **Business Analyst capabilities**:
 
-🎯 Business Analyst Skills Demonstrated
+* Data analysis & KPI tracking
+* Business metric visualization
+* Transaction monitoring & risk detection
+* Data-driven decision support
+* API-based analytics systems
 
-This project highlights key Business Analyst capabilities:
+---
 
-Data analysis & KPI tracking
+# 🔮 Future Improvements
 
-Business metric visualization
+* Fraud detection models
+* Time-series payment trend analysis
+* Transaction failure monitoring dashboard
+* Database integration (PostgreSQL / MongoDB)
+* Authentication & role-based access
 
-Transaction monitoring & risk detection
+---
 
-Data-driven decision support
+# 👩‍💻 Author
 
-API-based analytics systems
+**Pragati Singh**
 
-🔮 Future Improvements
+Aspiring **Business Analyst** with experience in:
 
-Fraud detection models
-
-Time-series payment trend analysis
-
-Transaction failure monitoring dashboard
-
-Database integration (PostgreSQL / MongoDB)
-
-Authentication & role-based access
-
-👩‍💻 Author
-
-Pragati Singh
-
-Aspiring Business Analyst with experience in:
-
-Data analysis
-
-Financial analytics dashboards
-
-Stakeholder-driven solution design
-
-Agile project environments
+* Data analysis
+* Financial analytics dashboards
+* Stakeholder-driven solution design
+* Agile project environments
 
 GitHub:
-https://github.com/pragatis26
+[https://github.com/pragatis26](https://github.com/pragatis26)
+
+---
