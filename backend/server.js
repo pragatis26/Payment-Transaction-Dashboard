@@ -39,11 +39,14 @@ app.get("/analytics", (req, res) => {
         typeStats[t.type] = (typeStats[t.type] || 0) + 1;
     });
 
+    const successRate = ((successCount / totalTransactions) * 100).toFixed(2);
+
     res.json({
         totalTransactions,
         totalAmount,
         successCount,
         failedCount,
+        successRate,
         typeStats
     });
 

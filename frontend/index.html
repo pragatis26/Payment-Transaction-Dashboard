@@ -32,6 +32,11 @@
 </div>
 
 <div class="card">
+<h2>Success Rate</h2>
+<p id="successRate"></p>
+</div>
+
+<div class="card">
 <h2>Failed</h2>
 <p id="failedCount">0</p>
 </div>
@@ -43,6 +48,45 @@
 <canvas id="typeChart" width="400" height="400"></canvas>
 
 <script src="scripts.js"></script>
+
+<h2>Filter Transactions</h2>
+
+<select id="typeFilter">
+<option value="All">All</option>
+<option value="UPI">UPI</option>
+<option value="Card">Card</option>
+<option value="NEFT">NEFT</option>
+<option value="IMPS">IMPS</option>
+</select>
+
+
+<h2>Search by User</h2>
+
+<input type="text" id="userSearch" placeholder="Enter User ID (ex: U101)">
+<button id="searchBtn">Search</button>
+<button id="resetBtn">Reset</button>
+
+
+<h2>Recent Transactions</h2>
+
+<table id="transactionTable">
+
+<thead>
+<tr>
+<th>ID</th>
+<th>User</th>
+<th>Amount</th>
+<th>Type</th>
+<th>Status</th>
+<th>Risk Level</th>
+</tr>
+</thead>
+
+<tbody>
+
+</tbody>
+
+</table>
 
 </body>
 </html>

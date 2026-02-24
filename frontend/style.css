@@ -23,3 +23,29 @@ canvas{
 max-width:600px;
 margin:auto;
 }
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+
+th, td {
+border: 1px solid #ddd;
+padding: 8px;
+text-align: center;
+}
+
+th {
+background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+background-color: #fafafa;
+}
+
+.high-risk {
+background-color: #ffe6e6;
+color: red;
+font-weight: bold;
+}
